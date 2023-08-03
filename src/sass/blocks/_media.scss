@@ -12,6 +12,9 @@
             margin-right: 60px;
         }
     }
+    .consultation {
+        padding-left: 30px;
+    }
 }
 @media screen and  ( max-width:768px ) {
     .header {
@@ -36,6 +39,14 @@
         }
         &__subtitle {
             margin-top: 20px;
+        }
+    }
+    .consultation {
+        padding: 55px 0 25px 0;
+    }
+    .title {
+        &_left {
+            font-size: 32px;
         }
     }
 }
@@ -75,5 +86,18 @@
     }
     .advantages {
         padding: 20px 0px 45px 0px;
+    }
+    .consultation {
+        padding-left: 1px;
+        &__descr {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .title {
+        &_left {
+            font-size: 20px;
+            text-align: center;
+        }
     }
 }
