@@ -26,6 +26,18 @@
             align-items: center;
         }
     }
+    .advantages {
+        &__wrapper{
+            flex-direction: column;
+            margin: 0;
+        }
+        &__item {
+            margin-top: 45px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+        }
+    }
 }
 @media screen and  ( max-width:575px ){
     .header {
@@ -57,5 +69,11 @@
             width: 90px;
             font-size: 12px;
         }    
+    }
+    .title {
+        font-size: 23px;
+    }
+    .advantages {
+        padding: 20px 0px 45px 0px;
     }
 }
