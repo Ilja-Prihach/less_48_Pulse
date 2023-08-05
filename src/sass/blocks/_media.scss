@@ -15,6 +15,31 @@
     .consultation {
         padding-left: 30px;
     }
+    .carousel {
+        .slick-prev, .slick-next {
+            display:none ;
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        .slick-dots button {
+            padding-top: 15px;
+            font-size: 0;
+            background-color: #eac8be;
+            border-radius: 50%;
+            border: none;
+            width: 15px;
+            height: 15px;
+            margin: 8px;
+            outline: none;
+        }
+        .slick-dots li[class="slick-active"] button {
+            background: $main-color;
+        }
+    } 
+
 }
 @media screen and  ( max-width:768px ) {
     .header {
@@ -23,7 +48,7 @@
         }
     }
     .promo {
-        background: url(../img/bg/bg_mobile.jpg) center (center/cover) no-repeat;
+        background: url('../img/bg/bg_mobile.jpg') center center/cover no-repeat;
         &__wrapper {
             margin-right: 0;
             align-items: center;
@@ -49,6 +74,14 @@
             font-size: 32px;
         }
     }
+    .carousel {
+        &__inner {
+            width: 550px;
+            img {
+                width: 75%;
+            }
+        }    
+    }   
 }
 @media screen and  ( max-width:575px ){
     .header {
@@ -100,4 +133,12 @@
             text-align: center;
         }
     }
+    .carousel {
+        &__inner {
+            width: 310px;
+            img {
+                width: 42%;
+            }
+        }    
+    } 
 }
