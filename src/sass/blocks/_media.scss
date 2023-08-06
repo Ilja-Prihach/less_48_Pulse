@@ -39,6 +39,11 @@
             background: $main-color;
         }
     } 
+    .catalog{
+        &__content{
+            justify-content: space-around;
+        }
+    } 
 
 }
 @media screen and  ( max-width:768px ) {
@@ -81,7 +86,12 @@
                 width: 75%;
             }
         }    
-    }   
+    }  
+    .catalog{
+        &__tab{
+            width: 170px;
+        }
+    } 
 }
 @media screen and  ( max-width:575px ){
     .header {
@@ -140,5 +150,14 @@
                 width: 42%;
             }
         }    
+    } 
+    .catalog{
+        &__tab{
+            width: 220px;
+            margin-bottom: 15px;
+        }
+        &__tabs {
+            flex-direction: column;
+        }
     } 
 }
