@@ -44,6 +44,11 @@
             justify-content: space-around;
         }
     } 
+    .feed {
+        &__img {
+            margin-left: 10px;
+        }
+    }
 
 }
 @media screen and  ( max-width:768px ) {
@@ -92,6 +97,13 @@
             width: 170px;
         }
     } 
+    .feed {
+        &__img {
+            width: 140px;
+            height: 140px;
+        }
+    }
+
 }
 @media screen and  ( max-width:575px ){
     .header {
@@ -160,4 +172,23 @@
             flex-direction: column;
         }
     } 
+    .feed {
+        &__item {
+            flex-direction: column;
+        }
+        &__wrapper{
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+        &__img {
+            width: 169px;
+            height: 169px;
+        }
+        &__name {
+            text-align: center;
+        }
+        &__count {
+            text-align: center;
+        }
+    }
 }
