@@ -191,4 +191,30 @@
             text-align: center;
         }
     }
+    .footer {
+        &__info {
+            width: 320px;
+        }
+        &__social-item {
+            margin: 0 5px;
+        }
+    }
+    .pageup {
+        display: none;
+    }
+    .modal {
+        width: 300px;
+        padding: 10px;
+        &__close {
+            top: 0px;
+            right: 5px;
+        }
+    }
+    .feed-form input {
+        width: 280px;
+    }
+    
+    .button_submit {
+        width: 280px;
+    }
 }
